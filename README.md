@@ -1,4 +1,4 @@
-# Rental Comparison App
+# StayShare - Rental Comparison App
 
 A modern web application built with React and TypeScript that helps users compare rental properties and make informed decisions.
 
