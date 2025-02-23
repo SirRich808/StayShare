@@ -1,0 +1,126 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary: #3B82F6;
+  --primary-rgb: 59, 130, 246;
+}
+
+@layer base {
+  body {
+    background-color: rgb(249, 250, 251);
+    color: rgb(17, 24, 39);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: rgb(17, 24, 39);
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(17, 24, 39);
+  }
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .btn:focus {
+    outline: none;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-offset-width: 2px;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: rgba(var(--primary-rgb), 0.9);
+  }
+
+  .btn-primary:focus {
+    box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.5);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background-color: white;
+    color: rgb(55, 65, 81);
+    border: 1px solid rgb(209, 213, 219);
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 0.5rem;
+    background-color: white;
+    color: rgb(17, 24, 39);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    transition-property: color, background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .input:focus {
+    outline: none;
+    border-color: transparent;
+    --tw-ring-width: 2px;
+    --tw-ring-color: var(--primary);
+    box-shadow: 0 0 0 2px var(--tw-ring-color);
+  }
+
+  .label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(55, 65, 81);
+    margin-bottom: 0.25rem;
+  }
+
+  .table-cell {
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: rgb(17, 24, 39);
+  }
+
+  .table-header {
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgb(17, 24, 39);
+    background-color: rgb(249, 250, 251);
+  }
+}
