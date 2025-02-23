@@ -11,7 +11,7 @@ A modern web application built with React and TypeScript that helps users compar
 
 ## Try It Out
 
-Visit the live app at: [Rental Comparison App](https://[your-github-username].github.io/rental-comparison-app/)
+Visit the live app at: [StayShare](https://sirrich808.github.io/StayShare/)
 
 ## Development
 
